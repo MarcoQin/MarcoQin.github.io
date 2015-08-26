@@ -194,7 +194,7 @@ ul.compact li a {
 /* @end */
 
 /* @group Header */
-#header, #header a { color: rgba(218, 33, 33, 0.73); }
+#header, #header a { color: silver; }
 #header .hover { color: transparent; }
 #header:hover a { color: black; text-shadow: #aaa 2px 2px 3px;}
 #header:hover a:hover { text-decoration: none; }
