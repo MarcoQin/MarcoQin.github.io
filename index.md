@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Posts
+title: Python Sky
 tagline: Supporting tagline
 ---
 {% include JB/setup %}
