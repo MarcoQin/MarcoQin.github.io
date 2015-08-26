@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About Me
-permalink: /about
+permalink: /about/
 ---
 
 **秦愿愿，男，初级工程师，Python开发，会一点前端**
