@@ -34,7 +34,7 @@ img { -ms-interpolation-mode:bicubic; }
 html>body { font-size:16px; }
 p { margin: 0 0 1.5em 0; text-align: justify; }
 
-a { text-decoration: none; color: silver; }
+a { text-decoration: none; color: gray; }
 a:hover { text-decoration: underline; color: #000; }
 a.pdf:before { 
 	margin-right: 1em;
