@@ -16,7 +16,7 @@ mongodb是文档化的数据库, 所有的collection都可以随意定义.
 
 刚开始设计是按照如下方式:
 
-```python
+{% highlight python %}
 _id: userid, int
 phonebook:[
     {
@@ -30,7 +30,7 @@ phonebook:[
         },
     },
 ]
-```
+{% endhighlight %}
 
 出来后发现, 这种结构对数据更新太不友好.
 
