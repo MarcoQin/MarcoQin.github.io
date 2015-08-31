@@ -1,5 +1,6 @@
 ---
 layout: post
+category : Other
 title: Hello World
 ---
 
