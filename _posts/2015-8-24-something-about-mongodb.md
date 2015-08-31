@@ -38,7 +38,7 @@ phonebook:[
 
 于是, 改良后, collection设计如下:
 
-```python
+{% highlight py %}
 {
     '_id': userid,  # int, 用户id作为主键
     'phonebook':{  # 电话簿存储
@@ -55,7 +55,7 @@ phonebook:[
         }
     }
 }
-```
+{% endhighlight %}
 
 变成如上结构之后, 无论是查找, 更新, 还是包装成response返回给客户端, 操作方便性差不多是平衡的.
 
@@ -63,7 +63,7 @@ phonebook:[
 
 mongodb有对应的对未知键的数据查询方式, 通过关键字'$where'放入一段javascript函数进行查询. 应用到此处便如下所示:
 
-```javascript
+{% highlight js %}
 {
     '_id': 0,
     "$where" : function(){
@@ -80,6 +80,6 @@ mongodb有对应的对未知键的数据查询方式, 通过关键字'$where'放
         return false;
     }
 }
-```
+{% endhighlight %}
 
 **注意:** 在Python中使用时, '$where'后面跟的是string. 可以先用三引号将js函数包围.
