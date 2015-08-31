@@ -2,7 +2,7 @@
 
 layout: post
 title: 关于mongodb中collection的设计问题
-category : Dev
+category : Python
 tagline: "Supporting tagline"
 tags : [mongodb, database, nosql]
 
