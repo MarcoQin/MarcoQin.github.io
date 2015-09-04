@@ -40,12 +40,16 @@ permalink: /about/
 
 **Other**
 
->**Protobuffer**
+>**Protobuffer** 熟练
 
->熟练
+>**Git** 熟练
+
+>**Github** 开源代码, Blog
+
+>**vim** 熟练
 
 **期待薪水**
 
 >税前10k+
 
-**Contact me at**  [qyyfy2009@163.com](mailto:qyyfy2009@163.com)
+**Contact me at**  [qyyfy2009@163.com](mailto:qyyfy2009@163.com) or [qyyfy2009@gmail.com](mailto:qyyfy2009@gmail.com)
