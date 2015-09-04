@@ -4,20 +4,48 @@ title: About Me
 permalink: /about/
 ---
 
-**秦愿愿，男，初级工程师，Python开发，会一点前端**
+**秦愿愿，男，Python开发工程师**
 
->初出茅庐，喜爱编程。层于地下六百米挖煤，某日突然觉醒，遂辞职，转行程序员一枚。
+**Skills:**
 
->自学编程，根基不稳，每日潜心学习，努力将遗漏的基础夯实。
+**Python**  最常用最熟练的语言.
 
->目前木有什么娱乐活动，code&学习之余，也弹弹琴。虽然多年未碰，弹琴也着实让浮躁、愤怒的自己迅速平静。
+>**FrameWorks:**
 
->哦，对了，自制力强。
+>Django|Tornado|Flask: 非常熟练, 日常使用框架
 
->目前正在潜心透视自己内心，希望遇事心平气和，诸事才从容。
+>**DATABASE:**
 
-><del>希望遇到高手|更希望自己成为高手|加油</del>
+>MYSQL|MongoDB|Redis: 熟练, 日常使用数据库
+
+**JavaScript**  前端部分
+
+>**FrameWorks:**
+
+>Jquery: UI, AJAX, 熟练
+
+>Avalon.js: MVVC框架 , 熟练.(转Angular.js容易)
+
+**Objective-C** 将要学会并使用的语言
+
+>**status:**
+
+> 学习中...
+
+**Shell**  常规命令, 日常使用
+
+>**status:**
+
+>虽然足够日常使用, 还在学习中...
+
+**Other**
+
+>**Protobuffer**
+
+>熟练
+
+**期待薪水**
+
+>税前10k+
 
 **Contact me at**  [qyyfy2009@163.com](mailto:qyyfy2009@163.com)
-
-
