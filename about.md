@@ -16,7 +16,7 @@ permalink: /about/
 
 >**DATABASE:**
 
->MYSQL|MongoDB|Redis: 熟练, 日常使用数据库
+>MYSQL|MongoDB|Redis: 非常熟练, 日常使用数据库
 
 **JavaScript**  前端部分
 
