@@ -21,6 +21,7 @@ tags : [cache, python]
 以下是最开始写的一个Django的filter, 用来动态渲染oam系统左侧一级菜单栏的开闭状态.
 
 {% highlight python %}
+```
 @register.filter(name='one_cl')
 def one_cl(cur, base):
     try:
@@ -44,7 +45,8 @@ def one_cl(cur, base):
         if cur == base.uri:
             c = 'open'
     return c
-{% endhighlight%}
+```
+{% endhighlight %}
 
 由于时间仓促, 并且权限控制部分的model实在过于难用, 以下代码的可读性比较差..
 而且一眼就可以看出, 如此多的循环嵌套, 每打开一次一级菜单都执行一遍的话, 开销
@@ -53,6 +55,7 @@ def one_cl(cur, base):
 于是做了点小小的改动:
 
 {% highlight python %}
+```
 one_dict = {} # cashe dict
 @register.filter(name='one_cl')
 def one_cl(cur, base):
@@ -81,6 +84,7 @@ def one_cl(cur, base):
             c = 'open'
     one_dict['%s:%s'%(cur, base.id)] = c
     return c
+```
 {% endhighlight %}
 
 仅仅是增加了一层薄薄的缓存, 便可以在初始的几次执行之后, 再无需执行大量的循环
