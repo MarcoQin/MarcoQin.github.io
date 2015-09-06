@@ -44,7 +44,7 @@ def one_cl(cur, base):
         if cur == base.uri:
             c = 'open'
     return c
-{% endhightlight%}
+{% endhighlight%}
 
 由于时间仓促, 并且权限控制部分的model实在过于难用, 以下代码的可读性比较差..
 而且一眼就可以看出, 如此多的循环嵌套, 每打开一次一级菜单都执行一遍的话, 开销
