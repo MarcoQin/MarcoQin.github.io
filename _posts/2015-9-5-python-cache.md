@@ -95,7 +95,6 @@ def one_cl(cur, base):
 `@functools.lru_cache(maxsize=None, typed=False)`
 
 说明: maxsize为最多缓存的次数, 如果为None, 则无限制, 设置为2n时, 性能最佳;
-如果typed=True, 则不同参数类型的调用将分别缓存, 例如f(3)和f(3.0)
 
 使用此装饰器便可以节省大量代码, 并且让阅读代码的人更容易看懂.
 
