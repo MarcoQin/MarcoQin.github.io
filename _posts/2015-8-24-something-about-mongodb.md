@@ -42,7 +42,7 @@ phonebook:[
 {
     '_id': userid,  # int, 用户id作为主键
     'phonebook':{  # 电话簿存储
-        '{{telephone}}':{  # 通讯录中的号码作为主键
+        '<%telephone%>':{  # 通讯录中的号码作为主键
             'ref': 'telephone',  # 该号码指向的号码, 被指向号码持有该号码的全部信息. 信息持有者指向自己
             'app_info':{
                     'key':'value', # 用户在应用中的一些信息
