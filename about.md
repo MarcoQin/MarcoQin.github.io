@@ -6,7 +6,9 @@ permalink: /about/
 
 **秦愿愿，男，Python开发工程师**
 
-**[简历](https://github.com/MarcoQin/MarcoQin.github.io/blob/master/resume.md)**
+</br>
+</br>
+**[简历请戳这里](https://github.com/MarcoQin/MarcoQin.github.io/blob/master/resume.md)**
 
 **Skills:**
 
