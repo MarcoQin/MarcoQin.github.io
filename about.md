@@ -6,6 +6,8 @@ permalink: /about/
 
 **秦愿愿，男，Python开发工程师**
 
+**[简历](https://github.com/MarcoQin/MarcoQin.github.io/blob/master/resume.md)**
+
 **Skills:**
 
 **Python**  最常用最熟练的语言.
@@ -26,12 +28,6 @@ permalink: /about/
 
 >Avalon.js: MVVC框架 , 熟练.(转Angular.js容易)
 
-**Objective-C** 将要学会并使用的语言
-
->**status:**
-
-> 学习中...
-
 **Shell**  常规命令, 日常使用
 
 >**status:**
@@ -47,9 +43,5 @@ permalink: /about/
 >**Github** 开源代码, Blog
 
 >**vim** 熟练
-
-**期望薪水**
-
->税前10k+
 
 **Contact me at**  [qyyfy2009@163.com](mailto:qyyfy2009@163.com) or [qyyfy2009@gmail.com](mailto:qyyfy2009@gmail.com)
