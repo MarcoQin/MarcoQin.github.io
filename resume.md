@@ -1,6 +1,6 @@
 ###秦愿愿
 
-男 | 22岁 | Tel: 15611001733 | Email: [qyyfy2009@163.com](mailto:qyyfy2009@163.com)
+男 | 22岁 | Tel: | Email: [qyyfy2009@163.com](mailto:qyyfy2009@163.com)
 
 太原理工大学 | 安全工程 | 本科 | 2010-2014
 
