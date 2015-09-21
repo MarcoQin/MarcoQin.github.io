@@ -213,7 +213,7 @@ python
 
 以上过程用Shell执行的话是这样：
 
-{% highlight shell%}
+{% highlight py%}
 MacBook-Pro:ACG username$ cat tmp | grep 'p'
 python
 {% endhighlight %}
