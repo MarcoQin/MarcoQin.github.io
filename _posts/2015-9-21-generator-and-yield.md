@@ -17,7 +17,7 @@ Python使用到一定阶段，肯定绕不开yield。
 ####Generator&yield
 </br>
 
-函数使用yield关键字可以定义generator对象。generator是一个函数，它可以生成一个值的list，所以一定程度上可以做迭代器使用。
+函数使用yield关键字可以定义generator对象。generator可以生成一个值的list并返回，一定程度上有点像iterator。
 
 {% highlight python %}
 def countdown(n):
