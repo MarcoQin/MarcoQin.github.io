@@ -15,6 +15,7 @@ Python使用到一定阶段，肯定绕不开yield。
 注：以下所有代码均在Python2.7.10下执行
 
 ####Generator&yield
+</br>
 
 函数使用yield关键字可以定义generator对象。generator是一个函数，它可以生成一个值的list，所以一定程度上可以做迭代器使用。
 
@@ -68,6 +69,7 @@ Traceback (most recent call last):
 {% endhighlight %}
 
 ####Coroutine&yield
+</br>
 
 在函数内，yield还可以用作表达式出现在赋值运算符（=）的右边：
 
@@ -122,3 +124,32 @@ def croutine(func):
 ...
 >>>
 {% endhighlight %}
+
+如果yield表达式中提供了值，协程可以通过yield同时接受和发出返回值：
+
+{% highlight python %}
+def spliter(delimiter=None):
+    print 'Ready to split'
+    result = None
+    while 1:
+        line = (yield result)
+        result = line.split(delimiter)
+{% endhighlight %}
+
+调用方式跟生成器很像：
+
+{% highlight python %}
+>>> s = spliter(',')
+>>> s.next()
+Ready to split
+>>> s.send('A,B,C')
+['A', 'B', 'C']
+>>> s.send('hello,world')
+['hello', 'world']
+>>>
+{% endhighlight %}
+
+在上面的代码中，`next()`先让协程执行到(yield result)，这时将result的初始值None返回，yield挂起，等待send()调用。
+`send()`方法调用后，yield将接收到值放到line中，接着向下执行，line被split，结果放到result中。然后接着往下走，
+再次遇到yield，将上次的result的“生成”出来，然后挂起等待`send()`，直到被`close()`关闭。
+
