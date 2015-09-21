@@ -153,3 +153,72 @@ Ready to split
 `send()`方法调用后，yield将接收到值放到line中，接着向下执行，line被split，结果放到result中。然后接着往下走，
 再次遇到yield，将上次的result的“生成”出来，然后挂起等待`send()`，直到被`close()`关闭。
 
+####列子
+
+用协程模拟shell的管道操作：
+
+{% highlight python %}
+import sys
+import os
+import fnmatch
+@croutine
+def find_files(target):
+    while 1:
+        topdir, pattern = (yield)
+        for path, dirname, filelist in os.walk(topdir):
+            for name in filelist:
+                if fnmatch.fnmatch(name, pattern):
+                    target.send(os.path.join(path, name))
+
+import gzip, bz2
+@croutine
+def opener(target):
+    while 1:
+        name = (yield)
+        if name.endswith('.gz'): f = gzip.open(name)
+        elif name.endswith('.bz2'): f = bz2.BZ2File(name)
+        else: f = open(name)
+        target.send(f)
+
+@croutine
+def cat(target):
+    while 1:
+        f = (yield)
+        for line in f:
+            target.send(line)
+
+@croutine
+def grep(pattern, target):
+    while 1:
+        line = (yield)
+        if pattern in line:
+            target.send(line)
+
+@croutine
+def printer():
+    while 1:
+        line = (yield)
+        sys.stdout.write(line)
+{% endhighlight %}
+
+将这些代码连起来，模拟一个管道行为：
+
+{% highlight python %}
+>>> finder = find_files(opener(cat(grep('p',printer()))))
+>>> finder.send(('/Users/username/Music/ACG/', 'tmp'))
+python
+{% endhighlight %}
+
+在‘/Users/username/Music/ACG/’目录下，有个文件是tmp，文件中有一行文字包含'p'这个字符。
+
+以上过程用Shell执行的话是这样：
+
+{% highlight shell%}
+MacBook-Pro:ACG username$ cat tmp | grep 'p'
+python
+{% endhighlight %}
+
+在以上代码中，没个协程都发送数据给target参数表示的另一个协程。`finder`这个管道一直处于活跃状态，意思是
+可以不断地朝它send数据，知道显式调用`close()`方法为止。
+
+
