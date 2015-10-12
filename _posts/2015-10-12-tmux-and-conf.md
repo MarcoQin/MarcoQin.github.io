@@ -16,35 +16,35 @@ tmux 默认操作如下，只拿常用的我记得的说。。
 
 >在bash界面：
 
->   -tmux  打开tmux
+>   tmux  打开tmux
 
->   -tmux attach 直接进入追中的session中
+>   tmux attach 直接进入追中的session中
 
 >在tmux界面：
 
->   -所有的命令均得先按前缀C-b
+>   所有的命令均得先按前缀C-b
 
->   -s 打开目前所有的会话列表
+>   s 打开目前所有的会话列表
 
->   -d 保存当前会话并退出tmux（切换到终端界面）
+>   d 保存当前会话并退出tmux（切换到终端界面）
 
->   -c 新建tmux tab
+>   c 新建tmux tab
 
->   -% 当前tmux tab中垂直分割一个panel
+>   % 当前tmux tab中垂直分割一个panel
 
->   -" 当前tmux tab中水平分割一个panel
+>   " 当前tmux tab中水平分割一个panel
 
->   -C-方向键 设置当前pannel大小
+>   C-方向键 设置当前pannel大小
 
->   -n 切换到下一个tmux tab
+>   n 切换到下一个tmux tab
 
->   -p 切换到上一个tmux tab
+>   p 切换到上一个tmux tab
 
->   -数字切换到第n个tmux tab
+>   数字切换到第n个tmux tab
 
->   -[ 切换到复制模式，光标可以上下移动
+>   [ 切换到复制模式，光标可以上下移动
 
->   -: 输入命令状态
+>   : 输入命令状态
 
 
 配置文件
