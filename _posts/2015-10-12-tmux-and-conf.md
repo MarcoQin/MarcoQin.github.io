@@ -18,11 +18,13 @@ tmux 默认操作如下，只拿常用的我记得的说。。
 
 >   >tmux  打开tmux
 
+>   >tmux ls 列出所有的session
+
 >   >tmux attach 直接进入最后一次登出的session中
 
 >   >tmux attach-session -t <session-name> 进入名为<session-name>的session中
 
->   >tmux -s <session-name> 创建名为<session-name>的session，并进入
+>   >tmux new-session -s <session-name> 创建名为<session-name>的session，并进入
 
 >在tmux界面：
 
