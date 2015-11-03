@@ -58,13 +58,10 @@ file: ~/.tmux.conf
 
 第一次可以在tmux命令模式下使用`source-file ~/.tmux.conf`
 
-```
-set -g prefix C-x  # 设置前缀键为ctrl+x
-unbind C-b  # 解除旧的前缀绑定
-bind r source-file ~/.tmux.conf \; display "Reloaded!"  # 绑定r建为reload conf文件
-bind-key k select-pane -U  # hjkl切换panel
-bind-key j select-pane -D
-bind-key h select-pane -L
-bind-key l select-pane -R
-setw -g mode-keys vi  # 复制模式使用vi的按键（跳转、搜索等）
-```
+    unbind C-b  # 解除旧的前缀绑定
+    bind r source-file ~/.tmux.conf \; display "Reloaded!"  # 绑定r建为reload conf文件
+    bind-key k select-pane -U  # hjkl切换panel
+    bind-key j select-pane -D
+    bind-key h select-pane -L
+    bind-key l select-pane -R
+    setw -g mode-keys vi  # 复制模式使用vi的按键（跳转、搜索等）

@@ -6,19 +6,17 @@ permalink: /about/
 
 **秦愿愿，男，Python开发工程师**
 
-</br>
-</br>
 **[简历请戳这里](https://github.com/MarcoQin/MarcoQin.github.io/blob/master/resume.md)**
 
 **Skills:**
 
 **Python**  最常用最熟练的语言.
 
->**FrameWorks:**
+**FrameWorks:**
 
 >Django|Tornado|Flask: 非常熟练, 日常使用框架
 
->**DATABASE:**
+**DATABASE:**
 
 >MYSQL|MongoDB|Redis: 非常熟练, 日常使用数据库
 
