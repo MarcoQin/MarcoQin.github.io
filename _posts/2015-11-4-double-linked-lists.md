@@ -32,14 +32,14 @@ tags : [C, data structure]
 
 在代码目录下编译：
 
-~~~ bash
+{% highlight bash%}
 gcc -g -Wall -c -o list.o list.c
 gcc -g -Wall list_test.c list.o -o list_test
-~~~
+{% endhighlight %}
 
 输出结果如下：
 
-~~~ bash
+{% highlight bash%}
 $ ./list_test
 DEBUG list_test.c:113: ----- RUNNING: ./list_test
 ----
@@ -58,4 +58,4 @@ DEBUG list_test.c:108:
 ----- test_destroy
 ALL TESTS PASSED
 Tests run: 6
-~~~
+{% endhighlight %}
