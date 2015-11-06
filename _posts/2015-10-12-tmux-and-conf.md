@@ -66,4 +66,6 @@ bind-key j select-pane -D
 bind-key h select-pane -L
 bind-key l select-pane -R
 setw -g mode-keys vi  # 复制模式使用vi的按键（跳转、搜索等）
+bind-key -t vi-copy 'v' begin-selection
+bind-key -t vi-copy 'y' copy-selection
 {%endhighlight%}
