@@ -42,8 +42,8 @@ C语言无疑是首当其冲的。
 
 * 抄一遍[tp2](https://github.com/thentenaar/tp2) 一个c语言实现的1024小游戏。代码量小，容易理解。
 
-* 抄一遍[Minecraft](https://github.com/fogleman/Craft) Minecraft的C语言实现（一小部分），代码量大，正好我喜欢玩Minecraft,
-所以也能比较开心地抄。。。
+* <del>抄一遍[Minecraft](https://github.com/fogleman/Craft) Minecraft的C语言实现（一小部分），代码量大，正好我喜欢玩Minecraft,
+所以也能比较开心地抄。。。</del>(宣告失败。。只抄了某些实现)
 
 * 学（抄）[《数据结构与算法分析》](http://book.douban.com/subject/1139426/) 数据结构必不可少，基础不打好，以后会吃亏。。不，现在就感觉有些吃亏了。。
     我打算在抄这些代码的时候直接写成博客。。反正我的博客没人看，就当笔记本算了。。
