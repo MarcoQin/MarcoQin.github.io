@@ -4,7 +4,7 @@ title: About Me
 permalink: /about/
 ---
 
-**秦愿愿，男，Python开发工程师**
+**MarcoQin，男，Python开发工程师**
 
 **[简历请戳这里](https://github.com/MarcoQin/MarcoQin.github.io/blob/master/resume.md)**
 
