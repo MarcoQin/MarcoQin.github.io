@@ -43,6 +43,22 @@ tags : [system, ubuntu]
 
 ***
 
+**安装gnome3**
+
+自带的桌面实在难看，用我大gnome才爽。
+
+{% highlight bash%}
+sudo add-apt-repository ppa:gnome3-team/gnome3-staging
+sudo add-apt-repository ppa:gnome3-team/gnome3
+sudo apt-get update
+sudo apt-get install gnome-shell gnome-shell-extentions
+sudo apt-get install ubuntu-gnome-desktop
+{% endhighlight %}
+
+***注意：***可能会报错，如`The following packages have unmet dependencies:`之类。不要慌，直接尝试安装其中的依赖，然后再尝试安装gnome-shell。
+
+***
+
 **主题设定**
 
 漂亮最重要！难看的系统能让人抓狂！
