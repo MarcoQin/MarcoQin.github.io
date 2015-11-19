@@ -54,7 +54,8 @@ tags : [system, ubuntu]
     3. `sudo apt-get install numix-gtk-theme numix-icon-theme-circle`
 
 - **安装KDE5的breeze主题(鼠标主题)**
-    1. `sudo apt-add-repository ppa:kubuntu-ppa/next`
+    <del>1. `sudo apt-add-repository ppa:kubuntu-ppa/next`</del>
+    1. add `deb http://us.archive.ubuntu.com/ubuntu vivid main universe` to  '/etc/apt/sources.list'
     2. `sudo apt-get update`
     3. `sudo apt-get install breeze-corsor-theme`
 
