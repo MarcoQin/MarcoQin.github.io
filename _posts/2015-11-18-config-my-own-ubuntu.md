@@ -111,6 +111,7 @@ Vim自然使用自己修改过的[k-vim](https://github.com/MarcoQin/k-vim) 跟�
 - java (Oracle版)[按这里](https://www.digitalocean.com/community/tutorials/how-to-install-java-on-ubuntu-with-apt-get)
 - 配置google等的hosts（在stars里有）
 - 配置vpn
+    1. 在gnome中，没法直接从系统设置里配置vpn。但是可以在命令行中输入`nm-connection-editor`打开原始的网络配置器进行配置。
 - 安装jekyll[这里](http://michaelchelen.net/81fa/install-jekyll-2-ubuntu-14-04/) 中途ruby安装可能需要翻墙，注意。执行`jekyll serve`可能
     也会变成`bundle exec jekyll serve`。
 
