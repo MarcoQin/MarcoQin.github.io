@@ -58,7 +58,7 @@ sudo apt-get install ubuntu-gnome-desktop
 {% endhighlight %}
 
 ***注意：***可能会报错，如`The following packages have unmet dependencies:`之类。不要慌，直接尝试安装其中的依赖，然后再尝试安装gnome-shell。
-</dev>
+</del>
 
 **更新：**
 
