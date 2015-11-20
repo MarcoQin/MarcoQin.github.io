@@ -47,8 +47,16 @@ tags : [system, ubuntu]
 
 自带的桌面实在难看，用我大gnome才爽。
 
+**更新：**
 
-<del>
+ubuntu14.04安装gnome 3.12.x的时候，不是很稳定。所以直接安装官方提供源的gnome 3.10.04。
+
+{% highlight bash%}
+sudo apt-get install gnome-shell gnome-shell-extensions
+sudo apt-get install ubuntu-gnome-desktop
+{% endhighlight %}
+
+**以下为安装最新版gnome方法**
 {% highlight bash%}
 sudo add-apt-repository ppa:gnome3-team/gnome3-staging
 sudo add-apt-repository ppa:gnome3-team/gnome3
@@ -58,16 +66,7 @@ sudo apt-get install ubuntu-gnome-desktop
 {% endhighlight %}
 
 ***注意：***可能会报错，如`The following packages have unmet dependencies:`之类。不要慌，直接尝试安装其中的依赖，然后再尝试安装gnome-shell。
-</del>
 
-**更新：**
-
-ubuntu14.04安装gnome 3.12.x的时候，不是很稳定。所以直接安装官方提供源的gnome 3.10.04。
-
-{% highlight bash%}
-sudo apt-get install gnome-shell gnome-shell-extensions
-sudo apt-get install ubuntu-gnome-desktop
-{% endhighlight %}
 
 ***
 
