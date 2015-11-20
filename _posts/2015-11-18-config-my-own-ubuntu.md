@@ -47,15 +47,27 @@ tags : [system, ubuntu]
 
 自带的桌面实在难看，用我大gnome才爽。
 
+
+<del>
 {% highlight bash%}
 sudo add-apt-repository ppa:gnome3-team/gnome3-staging
 sudo add-apt-repository ppa:gnome3-team/gnome3
 sudo apt-get update
-sudo apt-get install gnome-shell gnome-shell-extentions
+sudo apt-get install gnome-shell gnome-shell-extensions
 sudo apt-get install ubuntu-gnome-desktop
 {% endhighlight %}
 
 ***注意：***可能会报错，如`The following packages have unmet dependencies:`之类。不要慌，直接尝试安装其中的依赖，然后再尝试安装gnome-shell。
+</dev>
+
+**更新：**
+
+ubuntu14.04安装gnome 3.12.x的时候，不是很稳定。所以直接安装官方提供源的gnome 3.10.04。
+
+{% highlight bash%}
+sudo apt-get install gnome-shell gnome-shell-extensions
+sudo apt-get install ubuntu-gnome-desktop
+{% endhighlight %}
 
 ***
 
@@ -73,20 +85,22 @@ sudo apt-get install ubuntu-gnome-desktop
     <del>1. `sudo apt-add-repository ppa:kubuntu-ppa/next`</del>
     1. add `deb http://us.archive.ubuntu.com/ubuntu vivid main universe` to  '/etc/apt/sources.list'
     2. `sudo apt-get update`
-    3. `sudo apt-get install breeze-corsor-theme`
+    3. `sudo apt-get install breeze-cursor-theme`
 
 - 在tweak-tool中进行设置。我的设置如下：
 
     {% capture images %} /images/tweak_theme_conf.png {% endcapture %} {% include gallery images=images caption="Theme Conf" cols=1 %}
 
-- 下方的docker栏的整法：
+- 下方的dock栏的整法：
     1. `sudo apt-get install docky`
+    2. docky栏图标出现问题时（比如模糊），google之。
 
 - **Terminal配色**
     Terminal配色自然要用solarized，配置vim的时候一并整了。链接[solarized](https://github.com/Anthony25/gnome-terminal-colors-solarized)
 
 - **Terminal tab样式修改**
-    在本博客中有。。上上篇吧。
+    <del>在本博客中有。。上上篇吧。</del>
+    更新：tab栏有变化是因为装了gnome 3.12.x，某些东西不兼容现在系统。换装3.10.04后，tab栏很正常，也很好看。
 
 ***
 
@@ -112,7 +126,8 @@ Vim自然使用自己修改过的[k-vim](https://github.com/MarcoQin/k-vim) 跟�
 - 配置google等的hosts（在stars里有）
 - 配置vpn
     1. 在gnome中，没法直接从系统设置里配置vpn。但是可以在命令行中输入`nm-connection-editor`打开原始的网络配置器进行配置。
-- 安装jekyll[这里](http://michaelchelen.net/81fa/install-jekyll-2-ubuntu-14-04/) 中途ruby安装可能需要翻墙，注意。执行`jekyll serve`可能
+    2. vpn及别的网络配置在/etc/NetworkManager/system-connections目录下。可以把以前备份的配置拷贝过去。
+- 安装jekyll[这里](http://jekyllrb.com/docs/installation/) 中途ruby安装可能需要翻墙，注意。执行`jekyll serve`可能
     也会变成`bundle exec jekyll serve`。
 
 
