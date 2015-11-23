@@ -3,7 +3,7 @@
 layout: post
 title: 二分查找树C实现
 category : C
-tags : [C, data struct]
+tags : [C, data structure]
 
 ---
 
