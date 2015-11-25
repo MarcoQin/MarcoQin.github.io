@@ -11,7 +11,6 @@ tags : [tmux, docker]
 目前在docker环境开发，用tmux十分方便。
 
 默认设置太难用，稍作修改放到这里备忘。
-
 tmux 默认操作如下，只拿常用的我记得的说。。
 
 >在bash界面：
@@ -68,4 +67,39 @@ bind-key l select-pane -R
 setw -g mode-keys vi  # 复制模式使用vi的按键（跳转、搜索等）
 bind-key -t vi-copy 'v' begin-selection
 bind-key -t vi-copy 'y' copy-selection
+
+#### COLOUR (Solarized 256)
+
+# default statusbar colors
+set-option -g status-bg colour235 #base02
+set-option -g status-fg colour136 #yellow
+set-option -g status-attr default
+
+# default window title colors
+set-window-option -g window-status-fg colour244 #base0
+set-window-option -g window-status-bg default
+#set-window-option -g window-status-attr dim
+
+# active window title colors
+set-window-option -g window-status-current-fg colour166 #orange
+set-window-option -g window-status-current-bg default
+#set-window-option -g window-status-current-attr bright
+
+# pane border
+set-option -g pane-border-fg black #base02
+set-option -g pane-active-border-fg brightgreen #base01
+
+# message text
+set-option -g message-bg colour235 #base02
+set-option -g message-fg colour166 #orange
+
+# pane number display
+set-option -g display-panes-active-colour colour33 #blue
+set-option -g display-panes-colour colour166 #orange
+
+# clock
+set-window-option -g clock-mode-colour colour64 #green
+
+# bell
+set-window-option -g window-status-bell-style fg=colour235,bg=colour160 #base02, red
 {%endhighlight%}
