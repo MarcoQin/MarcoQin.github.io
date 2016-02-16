@@ -128,6 +128,11 @@ Vim自然使用自己修改过的[k-vim](https://github.com/MarcoQin/k-vim) 跟�
     2. vpn及别的网络配置在/etc/NetworkManager/system-connections目录下。可以把以前备份的配置拷贝过去。
 - 安装jekyll[这里](http://jekyllrb.com/docs/installation/) 中途ruby安装可能需要翻墙，注意。执行`jekyll serve`可能
     也会变成`bundle exec jekyll serve`。
+- pdftk: 合并pdf文件. 使用方式： pdftk [.pdf files] output [output file]
+- Okular: pdf文件阅读器，非常好用，非常快，比自带的documents viewer快无数倍！
+- wps for linux: 比自带的libra office速度快很多，尤其是表格软件，简直秒杀。
+- xrecode2: windows下最好用的开源音频格式转换软件，非常好用你。在ubuntu14.04下完美使用（wine）。
+- MySQL Workbench: ubuntu下目前感觉最好用的mysql客户端，无论是UI还是操作，都是一流的。当然，要是mac的话，推荐用seque pro..
 
 
 **可能未完待续，想起来再更新...**
