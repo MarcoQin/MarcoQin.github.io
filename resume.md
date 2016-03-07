@@ -35,7 +35,7 @@
     旧代码重构及数据库迁移，新功能开发。
 
 ###技能掌握
-- Python 最常用最熟练的语言
+- Python 熟练
 - C 熟悉
 - Tornado | Django | Flask 熟练
 - MySQL | MongoDB | Redis 熟练
