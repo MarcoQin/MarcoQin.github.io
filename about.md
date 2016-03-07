@@ -8,40 +8,24 @@ permalink: /about/
 
 **[简历请戳这里](https://github.com/MarcoQin/MarcoQin.github.io/blob/master/resume.md)**
 
-**Skills:**
+**技能树:**
 
-**Python**  最常用最熟练的语言.
+Python: 熟练
 
-**FrameWorks:**
+JavaScript: 熟练
 
->Django|Tornado|Flask: 非常熟练, 日常使用框架
+Shell: 熟练
 
-**DATABASE:**
+C: 熟悉
 
->MYSQL|MongoDB|Redis: 非常熟练, 日常使用数据库
+C++: 正在入门
 
-**JavaScript**  前端部分
+MYSQL|MongoDB|Redis: 熟练
 
->**FrameWorks:**
+Tornado|Django|Flask: 熟练
 
->Jquery: UI, AJAX, 熟练
+vim: 熟练
 
->Avalon.js: MVVC框架 , 熟练.(转Angular.js容易)
+Git|Github: 熟练
 
-**Shell**  常规命令, 日常使用
-
->**status:**
-
->虽然足够日常使用, 还在学习中...
-
-**Other**
-
->**Protobuffer** 熟练
-
->**Git** 熟练
-
->**Github** 开源代码, Blog
-
->**vim** 熟练
-
-**Contact me at**  [qyyfy2009@163.com](mailto:qyyfy2009@163.com) or [qyyfy2009@gmail.com](mailto:qyyfy2009@gmail.com)
+**Contact me at**  [qyyfy2009#163.com](mailto:qyyfy2009#163.com) or [qyyfy2009#gmail.com](mailto:qyyfy2009#gmail.com)
