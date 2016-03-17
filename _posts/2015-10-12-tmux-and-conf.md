@@ -57,7 +57,7 @@ file: ~/.tmux.conf
 
 第一次可以在tmux命令模式下使用`source-file ~/.tmux.conf`
 
-{% highlight bash%}
+```bash
 unbind C-b  # 解除旧的前缀绑定
 bind r source-file ~/.tmux.conf \; display "Reloaded!"  # 绑定r建为reload conf文件
 bind-key k select-pane -U  # hjkl切换panel
@@ -99,4 +99,4 @@ set-option -g display-panes-colour brightred #orange
 
 # clock
 set-window-option -g clock-mode-colour green #green
-{%endhighlight%}
+```

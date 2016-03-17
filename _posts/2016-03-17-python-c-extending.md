@@ -21,7 +21,7 @@ pipe或FIFO连接mplayer的进程做歌曲播放和操作。进程间用pipe通�
 
 看Python doc，一步步走了下来，先做了个抽取音频文件metadata的封装，代码如下：
 
-{% highlight C%}
+```c
 /* file: sound_utils.c */
 #include <Python.h>
 #include <libavformat/avformat.h>
@@ -72,13 +72,13 @@ int main(int argc, char *argv[]) {
     initSoundUtils();
     return 0;
 }
-{% endhighlight %}
+```
 
 上面是这个模块儿的主体，依照文档的结构，分别定义函数、模块儿结构、和模块初始化函数。
 
 接下来只需要再写个setup.py用Python build就可以了：
 
-{% highlight python%}
+```py
 #!/usr/bin/env python
 # encoding: utf-8
 # file: setup.py
@@ -98,14 +98,13 @@ setup(name='SoundUtils',
       long_description=''' This is SoundUtils ''',
       ext_modules=[module1]
 )
-{% endhighlight %}
+```
 
 将上述两个文件放在同一目录下，运行`python setup.py build`就能在当前目录的build/目录下编译出SoundUtils.so的动态链接库。
 
 下面用Python测试一下功能：
 
-{% highlight bash%}
-
+```bash
 ╭─marcoqin@marcoqin-begin  ~/marco/C/audio/build/lib.linux-x86_64-2.7
 ╰─$ la
 total 12M
@@ -134,6 +133,6 @@ album
 artist
 梶浦由記
 >>>
-{% endhighlight %}
+```
 
 到这里完事儿，接下来只需要把想要的部分再做迁移就可以咯～

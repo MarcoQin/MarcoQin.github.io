@@ -7,7 +7,7 @@ tags : [C, data structure]
 
 ---
 
-~~~c
+```c
 #ifndef _Tree_H
 
 struct TreeNode;
@@ -114,4 +114,4 @@ SearchTree Delete(ElementType X, SearchTree T)
 
     return T;
 }
-~~~
+```

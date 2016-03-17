@@ -13,7 +13,7 @@ tags : [C, data structure]
 
 不过就目前来看，对于我最有效的学习方式居然是抄写代码->_->也是醉了。
 
-{% highlight c%}
+```c
 /**
 * FileName: list.h
 */
@@ -43,10 +43,10 @@ struct Node{
     ElementType Element;
     Position Next;
 };
-{% endhighlight %}
+```
 
 
-{% highlight c%}
+```c
 /**
 * FileName: list.c
 */
@@ -127,4 +127,4 @@ void DeleteList(List L)
         P = Tmp;
     }
 }
-{% endhighlight %}
+```

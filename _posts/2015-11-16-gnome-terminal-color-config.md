@@ -15,7 +15,7 @@ google之，找到解决方案，记录下来，省得以后再费劲儿找。
 
 编辑~/.config/gtk-3.0/gtk.css, 将其中的样式改成如下，标签就会变成阴暗的色彩，嗯嗯，喜欢。
 
-{% highlight css%}
+```css
 /* gnome-terminal */
 @define-color term-win-bg           #262626;
 @define-color term-tab-inactive-bg  #333333;
@@ -61,4 +61,4 @@ TerminalTabLabel.active-page .label {
     color: @ubuntu-orange; */
     color: cyan;
 }
-{% endhighlight %}
+```

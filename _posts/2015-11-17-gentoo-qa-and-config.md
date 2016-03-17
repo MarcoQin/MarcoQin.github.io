@@ -41,7 +41,7 @@ google找了一圈，各种办法试过后，终于找到了解决办法：
 
 执行后会列出所有的profile列表如下：
 
-{% highlight bash%}
+```bash
 Available profile symlink targets:
   [1]   default/linux/amd64/13.0
   [2]   default/linux/amd64/13.0/selinux
@@ -52,7 +52,7 @@ Available profile symlink targets:
   [7]   default/linux/amd64/13.0/desktop/kde/systemd
   [8]   default/linux/amd64/13.0/desktop/plasma
 ...
-{% endhighlight %}
+```
 
 然后用**eselect profile set 4**来设置profile，之后emerge就可以恢复正常了。
 

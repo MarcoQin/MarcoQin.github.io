@@ -23,12 +23,12 @@ tags : [bash, linux]
 
     终止case选项。
 
-{% highlight bash%}
+```bash
 1 case "$variable" in
 2 abc) echo "\$variable = abc" ;;
 3 xyz) echo "\$variable = xyz" ;;
 4 esac
-{% endhighlight %}
+```
 
 * **.**
 

@@ -14,7 +14,7 @@ tags : [C, data structure]
 
 堆的声明：
 
-{% highlight c%}
+```c
 #ifndef _BinHeap_H
 
 struct HeapStruct;
@@ -36,11 +36,11 @@ struct HeapStruct{
     int Size;
     ElementType *Elements;
 };
-{% endhighlight %}
+```
 
 堆初始化：
 
-{% highlight c%}
+```c
 PriorityQueue Initialize(int MaxElements)
 {
     PriorityQueue H;
@@ -63,14 +63,14 @@ PriorityQueue Initialize(int MaxElements)
 
     return H;
 }
-{% endhighlight %}
+```
 
 插入操作。为了保证插入不破坏堆序（heap order），我们需要用上滤(percolate up)
 策略来找到插入点。
 
     {% capture images %} /images/heap-percolate-up.png {% endcapture %} {% include gallery images=images caption="上滤(percolate up)" cols=1 %}
 
-{% highlight c%}
+```c
 /* H->Element[0] is a sentinel */
 
 void Insert(ElementType X, PriorityQueue H)
@@ -86,7 +86,7 @@ void Insert(ElementType X, PriorityQueue H)
         H->Elements[i] = H->Elements[i/2];
     H->Elements[i] = X;
 }
-{% endhighlight %}
+```
 
 DeleteMin类似插入函数的处理。找出最小元素（root节点）删除。但是会
 产生一个空穴。为了保证完全树，需要将空穴填补，并且将最后一个元素
@@ -97,7 +97,7 @@ DeleteMin类似插入函数的处理。找出最小元素（root节点）删除�
 
     {% capture images %} /images/heap-percolate-down.png {% endcapture %} {% include gallery images=images caption="下滤(percolate down)" cols=1 %}
 
-{% highlight c%}
+```c
 ElementType DeleteMin(PriorityQueue H)
 {
     int i, Child;
@@ -125,4 +125,4 @@ ElementType DeleteMin(PriorityQueue H)
     H->Elements[i] = LastElement;
     return MinElement;
 }
-{% endhighlight %}
+```

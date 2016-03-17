@@ -14,7 +14,7 @@ tags : [bash, expect]
 首先是自动pull：
 
 
-{% highlight bash%}
+```bash
 #!/bin/sh
 
 username="USERNAMEK"
@@ -76,7 +76,7 @@ spawn git pull '"$who"' '"$branch"'
 expect -nocase "Username*" { send "'"$username"'\r" }
 expect -nocase "Password*" { send "'"$password"'\r"; interact }
 '
-{% endhighlight %}
+```
 
 之所以用expect -c而不是重定向EOF（/usr/bin/expect << EOF），是因为实在是有个地方调不通。。所以这个办法比较好用。。
 
@@ -86,7 +86,7 @@ expect -nocase "Password*" { send "'"$password"'\r"; interact }
 
 还有个自动ssh脚本。。
 
-{% highlight bash%}
+```bash
 #!/bin/bash
 
 password="PASWORD"
@@ -106,6 +106,6 @@ expect -nocase "password*"
 send ""'$password'"\r"
 interact'
 
-{% endhighlight %}
+```
 
 同样好用。。仅针对个人好用哈。。
