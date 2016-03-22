@@ -57,7 +57,7 @@ sudo apt-get install ubuntu-gnome-desktop
 ```
 
 **以下为安装最新版gnome方法**
-```bash
+```sh
 sudo add-apt-repository ppa:gnome3-team/gnome3-staging
 sudo add-apt-repository ppa:gnome3-team/gnome3
 sudo apt-get update
