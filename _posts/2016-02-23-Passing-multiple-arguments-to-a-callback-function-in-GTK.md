@@ -61,3 +61,7 @@ google搜之，找到比较不错的解决办法：外层信号绑定传一个�
         g_slist_free(list);
         gtk_widget_hide(GTK_WIDGET(file_chooser));
     }
+
+**更新**
+
+其实也有别的方法。自己定义一个struct，然后将这个struct指针传到调用函数里。嘛，之后实现了一下，发现用现成的还是方便一些（笑）。
