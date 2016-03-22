@@ -12,6 +12,7 @@ tags : [Python]
 解析固定格式的csv表格，生成对应的sql语句和sqlalchemy model的py文件。
 
 Python脚本:
+
 ```py
 #!/usr/bin/env python
 # encoding: utf-8
