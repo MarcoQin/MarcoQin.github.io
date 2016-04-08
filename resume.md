@@ -24,19 +24,25 @@
 
 - **(tataUFO App)旧API重构&新功能的设计开发**
 
-    API开发、旧代码重构、数据库迁移及新功能开发。
+    项目描述：设计实现功能清晰，易于使用的的API，供客户端开发使用。
+
+    重构API，将原有耦合度高、设计复杂的API基于Tornado分割构建Microservices，快速、弹性地部署多个Tornado实例。
+
+    参与设计、开发新功能，设计合理的数据库及API结构。期间熟练使用MySQL、MongoDB及Redis。
+
+    服务器维护，熟练使用基本Shell命令。熟悉在新的服务器上搭建生产环境及常用数据库的安装和维护。
 
 - **(tataUFO)OAM系统开发**
 
-    开发基于Django框架的内部OAM管理平台。
+    使用Django框架编写维护内部使用的OAM管理系统后台、前端，部署并且维护。
 
 - **(天使汇)主站的服务端及前端开发**
 
-    旧代码重构及数据库迁移，新功能开发。
+    主站后端开发和维护，旧代码重构。App端API开发及重构。数据库系统迁移。 
 
 ###技能掌握
 - Python 熟练
-- C 熟悉
+- C 熟练
 - Tornado | Django | Flask 熟练
 - MySQL | MongoDB | Redis 熟练
 - Vim 熟练
