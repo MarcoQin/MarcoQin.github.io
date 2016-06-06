@@ -27,3 +27,4 @@ tags : [mysql]
     SET SESSION net_read_timeout = 1000;
     SHOW variables LIKE 'NET_read_timeout';
 
+mysql端设置好之后，再看是否在代码中正确释放了cursor和连接。如果使用的是sqlalchemy的话，需要注意释放session。
