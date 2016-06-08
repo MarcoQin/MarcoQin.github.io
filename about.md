@@ -6,8 +6,6 @@ permalink: /about/
 
 **MarcoQin，男，Python开发工程师**
 
-**[简历请戳这里](https://github.com/MarcoQin/MarcoQin.github.io/blob/master/resume.md)**
-
 **技能树:**
 
 Python: 熟练
