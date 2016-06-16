@@ -58,7 +58,9 @@ file: ~/.tmux.conf
 第一次可以在tmux命令模式下使用`source-file ~/.tmux.conf`
 
 ```bash
+set prefix C-x
 unbind C-b  # 解除旧的前缀绑定
+bind-key C-x send-prefix
 bind r source-file ~/.tmux.conf \; display "Reloaded!"  # 绑定r建为reload conf文件
 bind-key k select-pane -U  # hjkl切换panel
 bind-key j select-pane -D
