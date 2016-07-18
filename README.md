@@ -1,6 +1,5 @@
-# Marco's Blog
+# Marco's NoteBook
 
-# Pythonisa Dev Blog
 
 ###TAG
 
