@@ -111,7 +111,7 @@ add2 = add(2, ...)
 12
 ```
 
-Linux系统中的shell一般都有管道操作符（ | ），用管道可以在不同的功能之间进行通讯，如常见的：
+Linux系统中的shell一般都有管道操作符`|`，用管道可以在不同的功能之间进行通讯，如常见的：
 
 ```shell
 cat xxx.txt | grep xxx
@@ -124,7 +124,7 @@ cat xxx.txt | grep xxx
 val it : int list = [3; 6; 9]
 ```
 
-现在用Python3也可以很容易实现类似的东西。（ | 在Python中是常用的操作符，所以用@代替）:
+现在用Python3也可以很容易实现类似的东西。（ `|` 在Python中是常用的操作符，所以用@代替）:
 
 ```python
 range(1, 10) @ filter(lambda x: x % 3 == 0, ...)
