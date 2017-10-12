@@ -20,7 +20,7 @@ tags : [YCM, Python, Vim, Jedi]
   - views.py
 ```
 
-蛋疼的是, 若是在 views.py 里 `from src.model.test import xxxx` 的时候, vim 插件 YCM 就会直接报错，类似"Can't go to definition"。
+蛋疼的是, 若是在 views.py 里 "from src.model.test import xxxx" 的时候, vim 插件 YCM 就会直接报错，类似"Can't go to definition"。
 
 折腾了一阵，看到 YCM 对 Python 做补全是用的 Jedi 这个插件, 我的 vim 也装了 jedi-vim。于是进入 jedi-vim , 修改 autoload/ 目录下的.vim 文件，
 在最上方增加代码如下:
