@@ -3,7 +3,7 @@ description:      Marco's NoteBook
 disqus_shortname: marcoqin
 reading_time:     true
 words_per_minute: 200
-# Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
+# Your site's domain goes here (eg: https://mmistakes.github.io, http://yourdomain.com, etc)
 # When testing locally leave blank or use http://localhost:4000
 url: //marcoqin.github.io
 
@@ -12,18 +12,9 @@ owner:
   name:           Marco Qin
   avatar:         avatar.jpg
   bio:            "制杖, 会搓火球, 会撒币"
-  email:          qyyfy2009#gmail.com
+  email:          qyyfy2009@gmail.com
   # Social networking links used in footer. Update and remove as you like.
-  # twitter:
-  # facebook:
   github: MarcoQin
-  # stackexchange:
-  # linkedin:
-  # instagram:
-  # flickr:
-  # tumblr:
-  # google plus id, include the '+', eg +mmistakes
-  # google_plus:    +yourid
 
 # Background image to be tiled on all pages
 background:
@@ -36,33 +27,54 @@ bing_verify:
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Asia/Shanghai
-future:      true
+future:      true # publish future dated posts --  true, false (default)
 highlighter: rouge
 markdown:    kramdown
 gems:
   - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-feed
 sass:
   sass_dir: _sass
   style: compressed
 
+# https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   /:categories/:year/:month/:day/:title
 
 # Amount of post to show on home page
 paginate: 5
 
 kramdown:
+  input: GFM
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
-  enable_coderay: true
+  enable_coderay: false
 
-  coderay:
-    coderay_line_numbers: nil
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
-
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+include:
+  - .htaccess
+exclude:
+  - "*.less"
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - CHANGELOG
+  - Capfile
+  - Gemfile
+  - Gruntfile.js
+  - LICENSE
+  - README
+  - Rakefile
+  - config
+  - gulpfile.js
+  - lib
+  - log
+  - node_modules
+  - package.json
+  - spec
+  - tmp
