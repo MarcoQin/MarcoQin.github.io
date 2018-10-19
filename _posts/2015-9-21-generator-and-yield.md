@@ -14,7 +14,7 @@ Python使用到一定阶段，肯定绕不开yield。
 
 注：以下所有代码均在Python2.7.10下执行
 
-####Generator&yield
+#### Generator&yield
 </br>
 
 函数使用yield关键字可以定义generator对象。generator可以生成值并返回，一定程度上有点像iterator。
@@ -68,7 +68,7 @@ Traceback (most recent call last):
   StopIteration()
 ```
 
-####Coroutine&yield
+#### Coroutine&yield
 </br>
 
 在函数内，yield还可以用作表达式出现在赋值运算符（=）的右边：
@@ -153,7 +153,7 @@ Ready to split
 `send()`方法调用后，yield将接收到值放到line中，接着向下执行，line被split，结果放到result中。然后接着往下走，
 再次遇到yield，将上次的result的“生成”出来，然后挂起等待`send()`，直到被`close()`关闭。
 
-####例子
+#### 例子
 
 用协程模拟shell的管道操作：
 

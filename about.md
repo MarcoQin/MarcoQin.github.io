@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About Me
-permalink: /about/
+title: About
+sidebar_link: true
 ---
 
 胸无大志，随遇而安。

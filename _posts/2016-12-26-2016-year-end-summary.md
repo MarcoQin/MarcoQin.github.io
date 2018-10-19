@@ -4,7 +4,6 @@ layout: post
 title: 2016年终总结
 category : rest
 tagline: "Supporting tagline"
-tags : [2016, 总结]
 
 ---
 
