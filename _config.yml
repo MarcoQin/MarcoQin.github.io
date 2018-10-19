@@ -6,7 +6,8 @@ highlighter:      rouge
 title:            A BLOG
 description:      Marco's NoteBook
 url:              https://marcoqin.github.io
-disqus.shortname: marcoqin
+disqus:
+    shortname: marcoqin
 reading_time: true
 words_per_minute: 200
 
