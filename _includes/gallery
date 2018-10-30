@@ -15,7 +15,7 @@
 
 <figure {% if class != "" %}class="{{ class }}"{% endif %}>
     {% for image in images %}
-    <a href="{{ site.baseurl }}{{ image }}"><img src="{{ site.baseurl }}{{ image }}" alt=""></a>
+    <a href="{{ site.url }}{{ image }}"><img src="{{ site.url }}{{ image }}" alt=""></a>
     {% endfor %}
     <figcaption>{{ caption }}</figcaption>
 </figure>
